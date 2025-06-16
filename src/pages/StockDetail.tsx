@@ -18,7 +18,7 @@ const StockDetail = () => {
     holdings
   } = useUser();
   const navigate = useNavigate();
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(0);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   if (!stockId) {
