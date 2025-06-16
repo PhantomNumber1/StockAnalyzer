@@ -40,7 +40,7 @@ const StockDetail = () => {
   const totalCost = stock.currentPrice * quantity;
   const handleQuantityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(e.target.value);
-    if (value > 0) {
+    if (value >= 0) {
       setQuantity(value);
     }
   };
